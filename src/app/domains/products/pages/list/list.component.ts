@@ -9,7 +9,6 @@ import {
 import { CommonModule } from '@angular/common';
 import { RouterLinkWithHref } from '@angular/router';
 import { ProductComponent } from '@products/components/product/product.component';
-
 import { Product } from '@shared/models/product.model';
 import { CartService } from '@shared/services/cart.service';
 import { ProductService } from '@shared/services/product.service';
@@ -46,9 +45,6 @@ export default class ListComponent implements OnInit, OnChanges {
       next: (products) => {
         this.products.set(products);
       },
-      error: (error) => {
-        return error;
-      },
     });
   }
 
@@ -56,9 +52,6 @@ export default class ListComponent implements OnInit, OnChanges {
     this.categoryService.getAll().subscribe({
       next: (data) => {
         this.categories.set(data);
-      },
-      error: (error) => {
-        return error;
       },
     });
   }

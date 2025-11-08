@@ -10,16 +10,16 @@
     <div class="flex items-center justify-center mt-1">
       <div class="grid grid-cols-3 gap-1">
         @for (img of product()?.images; track img) {
-        <img
-          tabindex="0"
-          role="button"
-          (keydown.enter)="changeCover(img)"
-          alt="ecommerce"
-          class="object-cover object-center rounded border-2 border-gray-200"
-          [src]="img"
-          (click)="changeCover(img)"
-          [class.border-red-400]="img === cover()"
-        />
+          <img
+            tabindex="0"
+            role="button"
+            (keydown.enter)="changeCover(img)"
+            alt="ecommerce"
+            class="object-cover object-center rounded border-2 border-gray-200"
+            [src]="img"
+            (click)="changeCover(img)"
+            [class.border-red-400]="img === cover()"
+          />
         }
       </div>
     </div>
@@ -35,7 +35,7 @@
       {{ product()?.description }}
     </p>
     <p class="title-font font-medium text-2xl text-gray-900 mt-5">
-      {{ product()?.price | currency : "$" : "symbol" : "1.0" }}
+      {{ product()?.price | currency: "$" : "symbol" : "1.0" }}
     </p>
     <button
       (click)="addToCart()"
