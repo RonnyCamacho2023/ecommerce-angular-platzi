@@ -1,4 +1,4 @@
 export const environment = {
-  apiUrl: 'https://api.midominio.com',
+  apiUrl: 'https://api.escuelajs.co',
   production: true,
 };
