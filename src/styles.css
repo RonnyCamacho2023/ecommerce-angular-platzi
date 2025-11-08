@@ -2,3 +2,18 @@
 @tailwind base;
 @tailwind components;
 @tailwind utilities;
+
+:root {
+  --bg-color-angular: #a144eb;
+  --bg-color-tailwind: #0f172a;
+  --bg-color-tailwind2: #1f3056;
+  --bg-color-amarillo-instagram: #fed372;
+  --bg-color-amarillo-instagram2: #f8d673;
+  --bg-color-amarillo-instagram3: #e5cb67;
+  --bg-color-naranja-instagram: #f86f2f;
+  --bg-color-morado-instagram: #9e37b8;
+  --bg-color-cosmo-azul: #1a5877;
+  --bg-color-cosmo-azul2: #d4e8f1;
+  --bg-color-cosmo-azul3: #283a6a;
+  --bg-color-cosmo-azul: #313f57;
+}
