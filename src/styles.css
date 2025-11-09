@@ -1,4 +1,4 @@
-/* You can add global styles to this file, and also import other style files */
+@import url('https://fonts.googleapis.com/css2?family=Inter:wght@400;600;700;900&family=Poppins:wght@700;900&display=swap');
 @tailwind base;
 @tailwind components;
 @tailwind utilities;
@@ -16,4 +16,7 @@
   --bg-color-cosmo-azul2: #d4e8f1;
   --bg-color-cosmo-azul3: #283a6a;
   --bg-color-cosmo-azul: #313f57;
+}
+body {
+  font-family: 'Inter', sans-serif;
 }

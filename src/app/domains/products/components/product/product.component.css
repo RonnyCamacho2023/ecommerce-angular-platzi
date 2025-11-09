@@ -1,0 +1,120 @@
+.card-list-container {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+  gap: 15px;
+  padding: 10px;
+  background: #f2f4f2; /* fallback for old browsers */
+  background: -webkit-linear-gradient(
+    to left,
+    #f8f6f6,
+    #fefffe
+  ); /* Chrome 10-25, Safari 5.1-6 */
+  background: linear-gradient(
+    to left,
+    #f8f6f6,
+    #fefffe
+  ); /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
+
+  border-radius: 12px;
+}
+
+.card-list-item {
+  height: 100%;
+  display: flex;
+  flex-direction: column;
+  background-color: #ffffff;
+  border-radius: 12px;
+  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.08);
+  transition:
+    transform 0.3s ease,
+    box-shadow 0.3s ease;
+  overflow: hidden;
+}
+
+.card-list-item:hover {
+  transform: translateY(-5px);
+  box-shadow: 0 8px 20px rgba(0, 0, 0, 0.15);
+}
+
+.card-image-link {
+  display: block;
+  overflow: hidden;
+  max-height: 250px;
+  cursor: pointer;
+}
+
+.card-image {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  transition: transform 0.5s ease;
+}
+
+.card-image-link:hover .card-image {
+  transform: scale(1.05);
+}
+
+.card-list-content {
+  padding: 15px;
+  flex-grow: 1;
+}
+.card-list-category {
+  font-size: small;
+  opacity: 0.7;
+}
+.card-list-category {
+  font-family: 'Inter', sans-serif;
+  font-weight: 600;
+  font-size: 0.85rem;
+  color: #6c757d;
+  margin-bottom: 4px;
+  text-transform: uppercase;
+  font-weight: 600;
+}
+
+.card-list-title {
+  font-family: 'Inter', sans-serif;
+  font-size: 1.1rem;
+  font-weight: 700;
+  color: #212529;
+  margin-bottom: 10px;
+  display: -webkit-box;
+  -webkit-box-orient: vertical;
+  overflow: hidden;
+  min-height: 2.2rem;
+}
+
+.card-footer {
+  padding: 15px;
+  padding-top: 0;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.price-product {
+  font-family: 'Poppins', sans-serif;
+  font-size: 1.5rem;
+  font-weight: 700;
+  color: #5b55b2;
+}
+
+.addCard {
+  padding: 7px 14px;
+  /* background-color: #28a745; */
+  background-image: linear-gradient(to top left, #c086e1, #e8abc7);
+  color: white;
+  border: none;
+  border-radius: 6px;
+  cursor: pointer;
+  font-weight: 500;
+  transition: background-color 0.2s ease;
+}
+
+.addCard:hover {
+  background-color: #7e2188;
+}
+
+/* MEDIA QUERY */
+
+/* 🔑 CAMBIO CLAVE: Pendiente las Media Query para Moviles y Tablets */

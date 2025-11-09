@@ -1,27 +1,26 @@
-<div class="group rounded-lg border">
-  <a
-    [routerLink]="['/product', product.id]"
-    class="w-full overflow-hidden rounded-t-lg bg-gray-200"
-  >
-    <img
-      [src]="product.images[0]"
-      [alt]="product.title"
-      class="h-full w-full object-cover object-center group-hover:opacity-75"
-    />
-  </a>
-  <div class="flex flex-col space-y-2 p-4">
-    <h3 class="text-sm text-gray-700">{{ product.title }}</h3>
-    <p class="text-lg font-medium text-gray-900">
-      {{ product.price | currency: "$" : "symbol" : "1.0" }}
-    </p>
-    <p class="text-sm font-medium text-gray-500">
-      {{ product.creationAt | timeAgo }}
-    </p>
-    <button
-      class="text-black bg-gray-200 font-medium rounded-lg text-sm px-5 py-2.5 w-full"
-      (click)="addToCartHandler()"
-    >
-      Add to cart
-    </button>
+<div class="card-list-container">
+  <div class="card-list-item">
+    <a [routerLink]="['/product', product.id]" class="card-image-link">
+      <img [src]="product.images[0]" [alt]="product.title" class="card-image" />
+    </a>
+
+    <div class="card-list-content">
+      <div class="card-list-category">
+        {{ product.category.name }}
+      </div>
+      <div class="card-list-title">
+        {{ product.title }}
+      </div>
+      <div class="card-footer">
+        <div class="card-list-price">
+          <span class="price-product">{{
+            product.price | currency: '$' : 'symbol' : '1.0'
+          }}</span>
+        </div>
+        <button class="addCard" (click)="addToCartHandler()">
+          Add to card
+        </button>
+      </div>
+    </div>
   </div>
 </div>
